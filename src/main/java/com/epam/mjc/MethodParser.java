@@ -24,8 +24,6 @@ public class MethodParser {
      * @return {@link MethodSignature} object filled with parsed values from source string
      */
     public MethodSignature parseFunction(String signatureString) {
-        System.out.println(signatureString);
-
         StringTokenizer st1 = new StringTokenizer(signatureString.substring(0, signatureString.indexOf('(')), " ");
 
         String accessModifier = null;
